@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>School Board</title>
-    <script src="https://kit.fontawesome.com/006642858d.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/531a9ff686.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -16,14 +16,14 @@
             <a class="navbar-brand" href="#">
                 <img class="logo-sb" src="img/logoSB.png">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navMobile" class="navbar-collapse collapse justify-content-end">
-                <a class="nav-item nav-link">Home</a>
-                <a class="nav-item nav-link">Cadastrar Aluno</a>
-                <a class="nav-item nav-link">Pesquisar Aluno</a>
-                <a id="sair-btn" class="nav-item nav-link btn btn-danger">Sair</a>
+                <a class="nav-item nav-link"><i class="fa-solid fa-home"></i>  Home</a>
+                <a class="nav-item nav-link"><i class="fa-solid fa-user-graduate"></i>  Cadastrar Aluno</a>
+                <a class="nav-item nav-link"><i class="fa-solid fa-magnifying-glass"></i>  Pesquisar Aluno</a>
+                <a id="sair-btn" class="nav-item nav-link btn btn-danger">Sair  <i class="fa-regular fa-circle-xmark"></i></a>
             </div>
         </nav>
     </header>
@@ -47,6 +47,9 @@
         </div>
         </div>
     </section>
+    <footer class="rodape">
+        <span>Todos os Direitos Reservados - 2023 &copy; Jonathan Guerra</span>
+    </footer>
 
     <script src="/webjars/jquery/3.6.4/jquery.min.js"></script>
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>

@@ -19,12 +19,12 @@ img.logo-sb{
     width: 150px;
 }
 
-nav.navbar{
+nav{
     background-color: #0B1B3D;
     color: white;
     font-weight: bold;
     height: 60px;
-    box-shadow: 2px 2px 2px 2px rgb(176,196,222, 0.2);
+    box-shadow: 2px 2px 2px 2px rgb(176,196,222, 0.5);
 }
 
 a{
@@ -32,8 +32,12 @@ a{
     margin: 10px;
 }
 
+.nav-item:hover{
+    color: #ff3131;
+}
+
 #sair-btn{
-    width: 40px;
+    width: 60px;
     border-radius: 0;
 }
 
@@ -77,13 +81,50 @@ a{
     width: 280px;
     color: #fff;
     font-weight: bold;
-    background-color: #1E90FF;
+    background-color: #3168d8;
+    padding: 15px;
 }
 
 .wm > .pesquisar{
     width: 280px;
     color: #fff;
     font-weight: bold;
-    background-color: #32CD32;
+    background-color: #3168d8;
+    padding: 15px;
 }
 
+.botoes{
+    padding: 2% 15%;
+}
+
+.btn:hover{
+    border: 2px solid #ff3131;
+    background-color: transparent;
+}
+
+.rodape{
+    background-color: #0B1B3D;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.rodape > span{
+    margin-top: 5px;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 1010px){
+    .wm{
+        width: 100%;
+    }
+
+    nav{
+        height: 100%;
+    }
+
+    .main-container{
+        margin-top: 120px;
+    }
+
+}
